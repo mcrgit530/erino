@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost:27017/contact_db', { useNewUrlParser: true
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use('/', contactRoutes); // Use contact routes prefixed with `/api`
+app.use('/', contactRoutes); 
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
